@@ -332,9 +332,17 @@ p {
         margin: 15px 0;
     }
 
-    .letra, .input-modo-dia {
-        font-size: 18px;
-        padding: 10px 18px
+    .tecla {
+        font-size: 16px;
+        width: 30px;
+        margin: 0.1em -0.05em;
+        padding: 0.7em 0.55em;
+    }
+
+    .enviar-palavra {
+        font-size: 16px;
+        margin: 0.2em -0.05em;
+        padding: 0.7em 0.55em;
     }
 
     .tecla, .enviar-palavra {
@@ -343,6 +351,7 @@ p {
     }
 
     .teclado {
+        margin:0.2;
         flex-wrap: nowrap;
     }
 
