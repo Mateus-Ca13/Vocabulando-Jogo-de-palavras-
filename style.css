@@ -334,13 +334,13 @@ p {
 
     .letra, .input-modo-dia {
         font-size: 18px;
-        margin: 0.1em -1px;
-        padding: 0.6em 0.6em;
+         padding: 10px 18px;
     }
 
     .tecla, .enviar-palavra {
         font-size: 16px;
-        padding: 0.3em 0.5em;
+        margin: 0.1em -1px;
+        padding: 0.6em 0.6em;
     }
 
     .teclado {
