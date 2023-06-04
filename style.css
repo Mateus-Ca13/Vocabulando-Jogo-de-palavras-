@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+body {
+    background: rgb(34, 33, 51);
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+    transition: 0.3s all;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* CABECALHO ---------------------------------------------------------- */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.botao-modo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 1em
+}
+
+.imagem-modo {
+    width: 2em;
+    margin: 20px 5px ;
+    
+}
+
+.desativado {
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* COLUNA PRINCIPAL =========================================================== */
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: rgb(240, 171, 44);
+    font-size: 20px;
+    margin: 20px 0 5px;
+    font-weight: 600;
+}
+
+.subtitulo {
+    margin-bottom: 0.8em;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* TABELA DE INPUTS */
+
+.sessao-tabela {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso {
+    background-color: rgb(80, 77, 117);
+    padding: 0.5em 1em;
+    margin: 0.3em 0;
+    border-radius: 7px;
+    opacity: 0%;
+    transition: 0.3s all;
+}
+
+.tabela {
+    margin: 0.2em 1em 1em 1em;
+}
+
+.linha-palavra {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.letra {
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 1em;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 3px 3px;
+    border: white;
+    border-radius: 5px;
+    background: rgb(80, 77, 117);
+    color:white;
+    transition: 0.3s;
+}
+
+.letra:disabled {
+    background:rgb(29, 25, 37);
+}
+
+/* TECLADO ==================================================================== */
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecla {
+    text-transform: uppercase;
+    font-weight: 600;
+    border: white;
+    border-radius: 5px;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 0.3em 1em;
+    transition: 0.3s;
+    margin: 0.2em 0
+
+}
+
+.tecla-backspace {
+    padding: 0.3em 1em;
+}
+
+.backspace-botao {
+    width: 1em;
+    
+    
+}
+
+/* ABA DE TERMINO ============================================================= */
+
+.enviar-palavra, .botao-reiniciar, .botao-parar  {
+   
+    text-transform: uppercase;
+    border: white;
+    border-radius: 5px;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    padding: 0.3em 1.5em;
+    transition: 0.3s;
+}
+
+.botao-reiniciar {
+    background: #1b7500;
+    color: #fff;
+    transition: 0.2s all;
+}
+
+.botao-parar {
+    background: #a10c01;
+    color: #fff;
+    transition: 0.2s all;
+}
+
+
+.aviso-termino {
+    position: absolute;
+    margin: auto;
+    padding: 1em 1em 0.5em 1em;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    display: none;
+}
+
+.termino-ativo {
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(240, 171, 44);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 8px;
+}
+
+p {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.botao {
+    margin: 0.5em 0.1em;
+    padding: 10px 30px;
+}
+
+.fundo {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(256, 256, 256, 0.1);
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-ativo {
+    display: block;
+}
+
+.cabecalho {
+    color: rgb(80, 77, 117);
+    margin: 5em 0 0 0;
+    border-radius: 15px 15px 0 0;
+    width: 90vw;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(29, 25, 37);
+}
+.texto-cabecalho {
+    font-size: 16px;
+    margin: 0.1em
+}
+
+.img-cabecalho {
+    width: 30px;
+}
+
+.titulo-cabecalho {
+    margin: 0.5em;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+.rede {
+    margin: 0.2em 0.3em ;
+    width: 20px;
+    ;
+}
+/* ESTILOS  QUE SERAO ATIVADOS ------------------ */
+
+.input-ativado {
+    background: rgb(143, 134, 194);
+}
+
+
+.aviso-ativo {
+    opacity: 100%;
+    translate: 0 -2px;
+    transition: 0.3s all;
+}
+
+.letra-errada:disabled {
+    background-color: rgb(209, 16, 16);
+    color: white;
+}
+
+.letra-existe:disabled {
+    background-color: rgb(230, 187, 0);
+    color: white;
+}
+
+.letra-certa:disabled {
+    background-color: rgb(25, 141, 31);
+    color: white;
+}
+
+.tecla-faltante {
+    opacity: 20%;
+}
+
+.tecla-existe {
+    color: #fff;
+    background-color: rgb(199, 167, 25);
+}
+
+.tecla-certa {
+    color: #fff;
+    background-color: #1b7500;
+}
+
+/* MEDIA QUERY PRA CELULAR ---------------------------------------------- */
+@media (max-width:730px) {
+
+    .palavra-modo {
+        display: none;
+    }
+
+    .tecla, .enviar-palavra {
+        font-size: 22px;
+        padding: 0.3em 0.5em;
+    }
+
+    .teclado {
+        flex-wrap: nowrap;
+    }
+
+
+
+}
+
+@media (max-width:470px) {
+
+
+    .imagem-modo {
+        width: 1.5em;
+        margin: 15px 0;
+    }
+
+    .letra, .input-modo-dia {
+        font-size: 18px;
+        padding: 10px 18px
+    }
+
+    .tecla, .enviar-palavra {
+        font-size: 16px;
+        padding: 0.3em 0.5em;
+    }
+
+    .teclado {
+        flex-wrap: nowrap;
+    }
+
+    .texto-cabecalho {
+        font-size: 12px;
+    }
+
+}
