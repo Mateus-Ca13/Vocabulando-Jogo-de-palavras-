@@ -10,4 +10,4 @@ Este projeto levou aproximadamente 5 semanas para ser finalizado e até então s
 
 Segue o link para o site do jogo (responsivo para telas de celulares, tablets e computadores): 
 
-https://mateus-ca13.github.io/Vocabulando/
+https://mateus-ca13.github.io/Vocabulando-Jogo-de-palavras-/
